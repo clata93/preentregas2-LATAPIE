@@ -66,9 +66,35 @@ body{
 
 }
 
-@media(max-width: 768px){
+@media (min-width: 576px){
+    .menu{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        font-size: small;
+
+    }
+    .logo{
+        font-size: small;
+        padding: 20px;
+    }
+    .carousel-item h5{
+        font-size: 1rem;
+    }
     .grid-container{
-        grid-template-columns: repeat(2);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .body{
+        background-color: red;
+    }
+    .seccion1 img{
+        height: 150px;
+        width: 200px;
     }
 
 }
@@ -151,6 +177,11 @@ body{
 
 .seccion1 img:hover{
     transform: scale(1.2);
+}
+
+.seccion1 a{
+    font-size: 3rem;
+    align-items: center;
 }
 .pie{
     background-image: linear-gradient(to bottom, antiquewhite, rgb(245, 162, 131));
